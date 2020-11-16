@@ -1,0 +1,6 @@
+framework module RZCardSlider {
+  umbrella header "RZCardSlider-umbrella.h"
+
+  export *
+  module * { export * }
+}

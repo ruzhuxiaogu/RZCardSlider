@@ -1,0 +1,813 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01D50ED0BD4C037B482780E94418D6CE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DCBF55828D88FED2FDACA5ABB41D0D2 /* Foundation.framework */; };
+		1E7DEFE88CECDEC9EAA8ED0DFEE1277B /* Pods-RZCardSlider_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E280E6632BD204D10295F238C55CBA9 /* Pods-RZCardSlider_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2A480BAF2B565B2AA5773D05594E2C77 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7F357906E663FB2A84F39FC436FB0A1 /* CoreText.framework */; };
+		3FC02146DF122ECAE0687CD2C6526017 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DCBF55828D88FED2FDACA5ABB41D0D2 /* Foundation.framework */; };
+		45F22944FAA203540F4B7727E09D7E5C /* QNCardSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = C99C416E4BA29A4A651AC12320C4B61C /* QNCardSlider.m */; };
+		559F5262AEDDDBA40CE3A3B151C8D27C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7262B265CC191D5570E40FC96D3B2EB0 /* CoreGraphics.framework */; };
+		64626F53C818EA28626DBC83F926CC48 /* RZCardSlider-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B7DFA4D465FD2AA984976A21EFB2CD0 /* RZCardSlider-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6C0D68A01F6AF2F29A7993BEACFDF41E /* RZCardSlider-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3445FA1D119E00662052534351B851C6 /* RZCardSlider-dummy.m */; };
+		704FE0002562ACAD000ACE83 /* RZWeakTimerTarget.h in Headers */ = {isa = PBXBuildFile; fileRef = 704FDFFE2562ACAD000ACE83 /* RZWeakTimerTarget.h */; };
+		704FE0012562ACAD000ACE83 /* RZWeakTimerTarget.m in Sources */ = {isa = PBXBuildFile; fileRef = 704FDFFF2562ACAD000ACE83 /* RZWeakTimerTarget.m */; };
+		704FE00A2562ACF6000ACE83 /* UIView+RZUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 704FE0082562ACF6000ACE83 /* UIView+RZUtils.h */; };
+		704FE00B2562ACF6000ACE83 /* UIView+RZUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 704FE0092562ACF6000ACE83 /* UIView+RZUtils.m */; };
+		7CB60DFB0ED9C6FF427AE5AF32E8D39F /* QNCardContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 828C59D7D0172BF5AD2B25B1DC5EB75E /* QNCardContentView.m */; };
+		8E0235EB587C1302C4A5194CA4FAB5FF /* QNCardSlider.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B8CB946EB800B9994E53F2C5215A490 /* QNCardSlider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		92F7FF892B934EA0A684D521ADC9B9CB /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E80FB7F616A2D5007910D23DDD9D61B0 /* CoreTelephony.framework */; };
+		B597AA62CFC57D0BE1BDB92C53FD6651 /* Pods-RZCardSlider_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 47C915C497FF09387E62BB90D62B0F8C /* Pods-RZCardSlider_Example-dummy.m */; };
+		CE42378789C02C0721BB65DD1549D1F0 /* Pods-RZCardSlider_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FCC069C6A9D521CE08A62AE60C1E0666 /* Pods-RZCardSlider_Tests-dummy.m */; };
+		D98F9486D9D0DB8DCDE6D3057F8871F6 /* QNCardContentView.h in Headers */ = {isa = PBXBuildFile; fileRef = 86BC627FA91B2BD0C66E631166ACA1D8 /* QNCardContentView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E1069B02C9ABC9DFE46B32BC399A4D6A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06E889D6B4FE7F6950ADBE80C9BE4AF6 /* SystemConfiguration.framework */; };
+		EBA9E96A47A74A8A825E6E35925B0B92 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DCBF55828D88FED2FDACA5ABB41D0D2 /* Foundation.framework */; };
+		F458BA8B71D16A1CFDB751A4BDDD76F8 /* Pods-RZCardSlider_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F4B408F2F53C6984A326DA9BA709DFE0 /* Pods-RZCardSlider_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1E99FEF05C639A75145F666BE8FAA63E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8CD7AD49A70C3A90814BC8A5A11651D0;
+			remoteInfo = "Pods-RZCardSlider_Example";
+		};
+		47A29109E18383917EA6E2F760F216D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04D27E3CBB849DF7C4E20DA0153552DE;
+			remoteInfo = RZCardSlider;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0102BE4B49A042B4AEBF2A2C73A50662 /* Pods-RZCardSlider_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RZCardSlider_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		03CCA707A36B9B4BA3DBB7CA2424E111 /* Pods-RZCardSlider_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RZCardSlider_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		06DB39D23B37B95F09254E1C7D2E1C1D /* Pods-RZCardSlider_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RZCardSlider_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		06E889D6B4FE7F6950ADBE80C9BE4AF6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		09AC49409836FBA5B051685F07FA42BA /* Pods_RZCardSlider_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RZCardSlider_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		09ACF115CC8EDAB827E0068017E6E5C0 /* Pods-RZCardSlider_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RZCardSlider_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		0CE254E56D6A3BAA5292B11C6F5934C0 /* Pods-RZCardSlider_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RZCardSlider_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		0DCBF55828D88FED2FDACA5ABB41D0D2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		23257E42D5D0234FE5406539FD95D4B5 /* Pods-RZCardSlider_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RZCardSlider_Example.release.xcconfig"; sourceTree = "<group>"; };
+		274D3A227DC6B4AD015C7135834A65E6 /* RZCardSlider.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = RZCardSlider.modulemap; sourceTree = "<group>"; };
+		2BBE5C4EDDD342162C0E203AC75A5D05 /* Pods-RZCardSlider_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RZCardSlider_Example-Info.plist"; sourceTree = "<group>"; };
+		33B9D52B0716E1B9A2544F51502AEF07 /* Pods-RZCardSlider_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RZCardSlider_Tests-Info.plist"; sourceTree = "<group>"; };
+		3445FA1D119E00662052534351B851C6 /* RZCardSlider-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RZCardSlider-dummy.m"; sourceTree = "<group>"; };
+		47C915C497FF09387E62BB90D62B0F8C /* Pods-RZCardSlider_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RZCardSlider_Example-dummy.m"; sourceTree = "<group>"; };
+		51883AC8DCCB775C080081E230203528 /* Pods_RZCardSlider_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RZCardSlider_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		53E05A17E081B54D20FD1AF055CB3D82 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		5B8CB946EB800B9994E53F2C5215A490 /* QNCardSlider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QNCardSlider.h; path = RZCardSlider/Classes/CardSlider/QNCardSlider.h; sourceTree = "<group>"; };
+		5E280E6632BD204D10295F238C55CBA9 /* Pods-RZCardSlider_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RZCardSlider_Tests-umbrella.h"; sourceTree = "<group>"; };
+		642E420B3A46BA700D7840EA65178B64 /* RZCardSlider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RZCardSlider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		704FDFFE2562ACAD000ACE83 /* RZWeakTimerTarget.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RZWeakTimerTarget.h; path = RZCardSlider/Classes/CardSlider/RZWeakTimerTarget.h; sourceTree = "<group>"; };
+		704FDFFF2562ACAD000ACE83 /* RZWeakTimerTarget.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = RZWeakTimerTarget.m; path = RZCardSlider/Classes/CardSlider/RZWeakTimerTarget.m; sourceTree = "<group>"; };
+		704FE0082562ACF6000ACE83 /* UIView+RZUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "UIView+RZUtils.h"; path = "RZCardSlider/Classes/CardSlider/UIView+RZUtils.h"; sourceTree = "<group>"; };
+		704FE0092562ACF6000ACE83 /* UIView+RZUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "UIView+RZUtils.m"; path = "RZCardSlider/Classes/CardSlider/UIView+RZUtils.m"; sourceTree = "<group>"; };
+		7262B265CC191D5570E40FC96D3B2EB0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		799FA1DD246A1C47762D03F42A19716A /* Pods-RZCardSlider_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RZCardSlider_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		7B7DFA4D465FD2AA984976A21EFB2CD0 /* RZCardSlider-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RZCardSlider-umbrella.h"; sourceTree = "<group>"; };
+		81469B27A4B094CE1768DAF9F91A74B9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		828C59D7D0172BF5AD2B25B1DC5EB75E /* QNCardContentView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QNCardContentView.m; path = RZCardSlider/Classes/CardSlider/QNCardContentView.m; sourceTree = "<group>"; };
+		86BC627FA91B2BD0C66E631166ACA1D8 /* QNCardContentView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QNCardContentView.h; path = RZCardSlider/Classes/CardSlider/QNCardContentView.h; sourceTree = "<group>"; };
+		97EC8EC33DC288A155AE6F5F204FAB4D /* RZCardSlider.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RZCardSlider.xcconfig; sourceTree = "<group>"; };
+		98155E8B8E0FDEC34572B17541EA7D47 /* RZCardSlider-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "RZCardSlider-Info.plist"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C6115C446DEAA1DD3BB04FC86BDBB54D /* RZCardSlider-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RZCardSlider-prefix.pch"; sourceTree = "<group>"; };
+		C91B08D0DD129ECC22A531F6C00AD0DB /* RZCardSlider.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = RZCardSlider.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C99C416E4BA29A4A651AC12320C4B61C /* QNCardSlider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QNCardSlider.m; path = RZCardSlider/Classes/CardSlider/QNCardSlider.m; sourceTree = "<group>"; };
+		D5CA48D2795D366371B7F9C0C8A0B14E /* Pods-RZCardSlider_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RZCardSlider_Tests.modulemap"; sourceTree = "<group>"; };
+		D7F357906E663FB2A84F39FC436FB0A1 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreText.framework; sourceTree = DEVELOPER_DIR; };
+		DFC7CAE1C76B609298AF5E712256C594 /* Pods-RZCardSlider_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RZCardSlider_Example.modulemap"; sourceTree = "<group>"; };
+		E80FB7F616A2D5007910D23DDD9D61B0 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreTelephony.framework; sourceTree = DEVELOPER_DIR; };
+		E95FA74330CD1ED7C770950DCFBFCD9B /* Pods-RZCardSlider_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RZCardSlider_Example-frameworks.sh"; sourceTree = "<group>"; };
+		F4B408F2F53C6984A326DA9BA709DFE0 /* Pods-RZCardSlider_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RZCardSlider_Example-umbrella.h"; sourceTree = "<group>"; };
+		F6F92AF858A22A813DFFDBBDEDC456CD /* Pods-RZCardSlider_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RZCardSlider_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		FCC069C6A9D521CE08A62AE60C1E0666 /* Pods-RZCardSlider_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RZCardSlider_Tests-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		43B1092960414E8473BD6390D7AEE084 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				559F5262AEDDDBA40CE3A3B151C8D27C /* CoreGraphics.framework in Frameworks */,
+				92F7FF892B934EA0A684D521ADC9B9CB /* CoreTelephony.framework in Frameworks */,
+				2A480BAF2B565B2AA5773D05594E2C77 /* CoreText.framework in Frameworks */,
+				01D50ED0BD4C037B482780E94418D6CE /* Foundation.framework in Frameworks */,
+				E1069B02C9ABC9DFE46B32BC399A4D6A /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B846382E6929B98921EDCEC1E0CCAAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FC02146DF122ECAE0687CD2C6526017 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF2492D510936D26362AE9C9A839A70F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBA9E96A47A74A8A825E6E35925B0B92 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		109987E2ED51DE2C4F5926494E1FCF0C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				274D3A227DC6B4AD015C7135834A65E6 /* RZCardSlider.modulemap */,
+				97EC8EC33DC288A155AE6F5F204FAB4D /* RZCardSlider.xcconfig */,
+				3445FA1D119E00662052534351B851C6 /* RZCardSlider-dummy.m */,
+				98155E8B8E0FDEC34572B17541EA7D47 /* RZCardSlider-Info.plist */,
+				C6115C446DEAA1DD3BB04FC86BDBB54D /* RZCardSlider-prefix.pch */,
+				7B7DFA4D465FD2AA984976A21EFB2CD0 /* RZCardSlider-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/RZCardSlider";
+			sourceTree = "<group>";
+		};
+		15358F390B9F45DDA2682CDA886C38FD /* Pods-RZCardSlider_Example */ = {
+			isa = PBXGroup;
+			children = (
+				DFC7CAE1C76B609298AF5E712256C594 /* Pods-RZCardSlider_Example.modulemap */,
+				0102BE4B49A042B4AEBF2A2C73A50662 /* Pods-RZCardSlider_Example-acknowledgements.markdown */,
+				F6F92AF858A22A813DFFDBBDEDC456CD /* Pods-RZCardSlider_Example-acknowledgements.plist */,
+				47C915C497FF09387E62BB90D62B0F8C /* Pods-RZCardSlider_Example-dummy.m */,
+				E95FA74330CD1ED7C770950DCFBFCD9B /* Pods-RZCardSlider_Example-frameworks.sh */,
+				2BBE5C4EDDD342162C0E203AC75A5D05 /* Pods-RZCardSlider_Example-Info.plist */,
+				F4B408F2F53C6984A326DA9BA709DFE0 /* Pods-RZCardSlider_Example-umbrella.h */,
+				03CCA707A36B9B4BA3DBB7CA2424E111 /* Pods-RZCardSlider_Example.debug.xcconfig */,
+				23257E42D5D0234FE5406539FD95D4B5 /* Pods-RZCardSlider_Example.release.xcconfig */,
+			);
+			name = "Pods-RZCardSlider_Example";
+			path = "Target Support Files/Pods-RZCardSlider_Example";
+			sourceTree = "<group>";
+		};
+		40BCCD95A0D12CFE4A00ABFC449E04BB /* RZCardSlider */ = {
+			isa = PBXGroup;
+			children = (
+				704FE0082562ACF6000ACE83 /* UIView+RZUtils.h */,
+				704FE0092562ACF6000ACE83 /* UIView+RZUtils.m */,
+				704FDFFE2562ACAD000ACE83 /* RZWeakTimerTarget.h */,
+				704FDFFF2562ACAD000ACE83 /* RZWeakTimerTarget.m */,
+				86BC627FA91B2BD0C66E631166ACA1D8 /* QNCardContentView.h */,
+				828C59D7D0172BF5AD2B25B1DC5EB75E /* QNCardContentView.m */,
+				5B8CB946EB800B9994E53F2C5215A490 /* QNCardSlider.h */,
+				C99C416E4BA29A4A651AC12320C4B61C /* QNCardSlider.m */,
+				631E136B74075F8D7EA77C019345D938 /* Pod */,
+				109987E2ED51DE2C4F5926494E1FCF0C /* Support Files */,
+			);
+			name = RZCardSlider;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		5062FD5C34D1C16DE412781716A71383 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				40BCCD95A0D12CFE4A00ABFC449E04BB /* RZCardSlider */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		631E136B74075F8D7EA77C019345D938 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				53E05A17E081B54D20FD1AF055CB3D82 /* LICENSE */,
+				81469B27A4B094CE1768DAF9F91A74B9 /* README.md */,
+				C91B08D0DD129ECC22A531F6C00AD0DB /* RZCardSlider.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		77C3E6E40F702E7218BA63F077559135 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				7262B265CC191D5570E40FC96D3B2EB0 /* CoreGraphics.framework */,
+				E80FB7F616A2D5007910D23DDD9D61B0 /* CoreTelephony.framework */,
+				D7F357906E663FB2A84F39FC436FB0A1 /* CoreText.framework */,
+				0DCBF55828D88FED2FDACA5ABB41D0D2 /* Foundation.framework */,
+				06E889D6B4FE7F6950ADBE80C9BE4AF6 /* SystemConfiguration.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7B7CBBFBE0FC00FF30DD47D276A5EDD1 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				15358F390B9F45DDA2682CDA886C38FD /* Pods-RZCardSlider_Example */,
+				DBEE2309D77C2F8EDB3B16A7A7DB7E27 /* Pods-RZCardSlider_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		B94D7768568A9992200DB461E8CF687F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				77C3E6E40F702E7218BA63F077559135 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C72D560CAFC7460B11C09D2221CD67B7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				51883AC8DCCB775C080081E230203528 /* Pods_RZCardSlider_Example.framework */,
+				09AC49409836FBA5B051685F07FA42BA /* Pods_RZCardSlider_Tests.framework */,
+				642E420B3A46BA700D7840EA65178B64 /* RZCardSlider.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				5062FD5C34D1C16DE412781716A71383 /* Development Pods */,
+				B94D7768568A9992200DB461E8CF687F /* Frameworks */,
+				C72D560CAFC7460B11C09D2221CD67B7 /* Products */,
+				7B7CBBFBE0FC00FF30DD47D276A5EDD1 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		DBEE2309D77C2F8EDB3B16A7A7DB7E27 /* Pods-RZCardSlider_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				D5CA48D2795D366371B7F9C0C8A0B14E /* Pods-RZCardSlider_Tests.modulemap */,
+				06DB39D23B37B95F09254E1C7D2E1C1D /* Pods-RZCardSlider_Tests-acknowledgements.markdown */,
+				0CE254E56D6A3BAA5292B11C6F5934C0 /* Pods-RZCardSlider_Tests-acknowledgements.plist */,
+				FCC069C6A9D521CE08A62AE60C1E0666 /* Pods-RZCardSlider_Tests-dummy.m */,
+				33B9D52B0716E1B9A2544F51502AEF07 /* Pods-RZCardSlider_Tests-Info.plist */,
+				5E280E6632BD204D10295F238C55CBA9 /* Pods-RZCardSlider_Tests-umbrella.h */,
+				799FA1DD246A1C47762D03F42A19716A /* Pods-RZCardSlider_Tests.debug.xcconfig */,
+				09ACF115CC8EDAB827E0068017E6E5C0 /* Pods-RZCardSlider_Tests.release.xcconfig */,
+			);
+			name = "Pods-RZCardSlider_Tests";
+			path = "Target Support Files/Pods-RZCardSlider_Tests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		086A1CD84AE7EC0F1E066AB7DBB5A48B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E7DEFE88CECDEC9EAA8ED0DFEE1277B /* Pods-RZCardSlider_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90128DAC41053F8BD32E5BB3A39EA333 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				704FE00A2562ACF6000ACE83 /* UIView+RZUtils.h in Headers */,
+				D98F9486D9D0DB8DCDE6D3057F8871F6 /* QNCardContentView.h in Headers */,
+				704FE0002562ACAD000ACE83 /* RZWeakTimerTarget.h in Headers */,
+				8E0235EB587C1302C4A5194CA4FAB5FF /* QNCardSlider.h in Headers */,
+				64626F53C818EA28626DBC83F926CC48 /* RZCardSlider-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2145E416D5B9C8EA955878AE8A88B9E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F458BA8B71D16A1CFDB751A4BDDD76F8 /* Pods-RZCardSlider_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		04D27E3CBB849DF7C4E20DA0153552DE /* RZCardSlider */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5961F25E876AAF6011185A5A0195F05D /* Build configuration list for PBXNativeTarget "RZCardSlider" */;
+			buildPhases = (
+				90128DAC41053F8BD32E5BB3A39EA333 /* Headers */,
+				1E30C73BAD065B9D9DF42DD9BF935D2F /* Sources */,
+				43B1092960414E8473BD6390D7AEE084 /* Frameworks */,
+				3B6C42078C2EB1A30D70884055369CA5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RZCardSlider;
+			productName = RZCardSlider;
+			productReference = 642E420B3A46BA700D7840EA65178B64 /* RZCardSlider.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		14136E897E987BA7909A91B3C8902EDD /* Pods-RZCardSlider_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 005CAA0FA66C6423929E4955885F63EE /* Build configuration list for PBXNativeTarget "Pods-RZCardSlider_Tests" */;
+			buildPhases = (
+				086A1CD84AE7EC0F1E066AB7DBB5A48B /* Headers */,
+				BED207D6E8D0D83709838B6CCBC8660E /* Sources */,
+				4B846382E6929B98921EDCEC1E0CCAAF /* Frameworks */,
+				56E2703C3BB7FC6E64C49B359A99ACCB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8CEA6764C352C3E98D3ED9DD1D5A1FD5 /* PBXTargetDependency */,
+			);
+			name = "Pods-RZCardSlider_Tests";
+			productName = "Pods-RZCardSlider_Tests";
+			productReference = 09AC49409836FBA5B051685F07FA42BA /* Pods_RZCardSlider_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8CD7AD49A70C3A90814BC8A5A11651D0 /* Pods-RZCardSlider_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44112266767A9EAF67FA1F8B9E0D9211 /* Build configuration list for PBXNativeTarget "Pods-RZCardSlider_Example" */;
+			buildPhases = (
+				A2145E416D5B9C8EA955878AE8A88B9E /* Headers */,
+				3DB491C1851F37815F7C6C4C5759AE90 /* Sources */,
+				DF2492D510936D26362AE9C9A839A70F /* Frameworks */,
+				0C5636D777C592665813BEED76112189 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1518DC3285907DD6E40D8CCB58F23927 /* PBXTargetDependency */,
+			);
+			name = "Pods-RZCardSlider_Example";
+			productName = "Pods-RZCardSlider_Example";
+			productReference = 51883AC8DCCB775C080081E230203528 /* Pods_RZCardSlider_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = C72D560CAFC7460B11C09D2221CD67B7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8CD7AD49A70C3A90814BC8A5A11651D0 /* Pods-RZCardSlider_Example */,
+				14136E897E987BA7909A91B3C8902EDD /* Pods-RZCardSlider_Tests */,
+				04D27E3CBB849DF7C4E20DA0153552DE /* RZCardSlider */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0C5636D777C592665813BEED76112189 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B6C42078C2EB1A30D70884055369CA5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56E2703C3BB7FC6E64C49B359A99ACCB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1E30C73BAD065B9D9DF42DD9BF935D2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				704FE00B2562ACF6000ACE83 /* UIView+RZUtils.m in Sources */,
+				7CB60DFB0ED9C6FF427AE5AF32E8D39F /* QNCardContentView.m in Sources */,
+				45F22944FAA203540F4B7727E09D7E5C /* QNCardSlider.m in Sources */,
+				704FE0012562ACAD000ACE83 /* RZWeakTimerTarget.m in Sources */,
+				6C0D68A01F6AF2F29A7993BEACFDF41E /* RZCardSlider-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DB491C1851F37815F7C6C4C5759AE90 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B597AA62CFC57D0BE1BDB92C53FD6651 /* Pods-RZCardSlider_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BED207D6E8D0D83709838B6CCBC8660E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE42378789C02C0721BB65DD1549D1F0 /* Pods-RZCardSlider_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1518DC3285907DD6E40D8CCB58F23927 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RZCardSlider;
+			target = 04D27E3CBB849DF7C4E20DA0153552DE /* RZCardSlider */;
+			targetProxy = 47A29109E18383917EA6E2F760F216D4 /* PBXContainerItemProxy */;
+		};
+		8CEA6764C352C3E98D3ED9DD1D5A1FD5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-RZCardSlider_Example";
+			target = 8CD7AD49A70C3A90814BC8A5A11651D0 /* Pods-RZCardSlider_Example */;
+			targetProxy = 1E99FEF05C639A75145F666BE8FAA63E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2E29E11824F6CA3BF1328D71B00DB832 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97EC8EC33DC288A155AE6F5F204FAB4D /* RZCardSlider.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/RZCardSlider/RZCardSlider-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RZCardSlider/RZCardSlider-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RZCardSlider/RZCardSlider.modulemap";
+				PRODUCT_MODULE_NAME = RZCardSlider;
+				PRODUCT_NAME = RZCardSlider;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		454F4BE6B5728F0CE2D129E9C4EFBB7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 799FA1DD246A1C47762D03F42A19716A /* Pods-RZCardSlider_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RZCardSlider_Tests/Pods-RZCardSlider_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RZCardSlider_Tests/Pods-RZCardSlider_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4BE66A09A74FD25164AAB3C2645B9B93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		7210B1B30BDF7E9D30D7C9681EAD0C69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97EC8EC33DC288A155AE6F5F204FAB4D /* RZCardSlider.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/RZCardSlider/RZCardSlider-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RZCardSlider/RZCardSlider-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RZCardSlider/RZCardSlider.modulemap";
+				PRODUCT_MODULE_NAME = RZCardSlider;
+				PRODUCT_NAME = RZCardSlider;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7EF7227D9B20A1D549000096ACCB23D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		8036145286AF34AEF7FF5EC623749953 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03CCA707A36B9B4BA3DBB7CA2424E111 /* Pods-RZCardSlider_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RZCardSlider_Example/Pods-RZCardSlider_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RZCardSlider_Example/Pods-RZCardSlider_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BC2F9AB2F003659C4583A4A9BB73638A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23257E42D5D0234FE5406539FD95D4B5 /* Pods-RZCardSlider_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RZCardSlider_Example/Pods-RZCardSlider_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RZCardSlider_Example/Pods-RZCardSlider_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C75AE520E32C8831DBC4949823CAD90A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09ACF115CC8EDAB827E0068017E6E5C0 /* Pods-RZCardSlider_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RZCardSlider_Tests/Pods-RZCardSlider_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RZCardSlider_Tests/Pods-RZCardSlider_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		005CAA0FA66C6423929E4955885F63EE /* Build configuration list for PBXNativeTarget "Pods-RZCardSlider_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				454F4BE6B5728F0CE2D129E9C4EFBB7D /* Debug */,
+				C75AE520E32C8831DBC4949823CAD90A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44112266767A9EAF67FA1F8B9E0D9211 /* Build configuration list for PBXNativeTarget "Pods-RZCardSlider_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8036145286AF34AEF7FF5EC623749953 /* Debug */,
+				BC2F9AB2F003659C4583A4A9BB73638A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EF7227D9B20A1D549000096ACCB23D7 /* Debug */,
+				4BE66A09A74FD25164AAB3C2645B9B93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5961F25E876AAF6011185A5A0195F05D /* Build configuration list for PBXNativeTarget "RZCardSlider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7210B1B30BDF7E9D30D7C9681EAD0C69 /* Debug */,
+				2E29E11824F6CA3BF1328D71B00DB832 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

@@ -1,0 +1,16 @@
+PODS:
+  - RZCardSlider (0.1.0)
+
+DEPENDENCIES:
+  - RZCardSlider (from `../`)
+
+EXTERNAL SOURCES:
+  RZCardSlider:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  RZCardSlider: a184b7053760b5814fe321d2c17e253343d8e5eb
+
+PODFILE CHECKSUM: 6ef0caeea8f6772343bc72ef7bcb7a95b67f9d5d
+
+COCOAPODS: 1.8.4

@@ -1,0 +1,6 @@
+framework module Pods_RZCardSlider_Tests {
+  umbrella header "Pods-RZCardSlider_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -7,9 +7,11 @@
 //
 
 #import "RZViewController.h"
+#import "QNCardSlider.h"
+#import "QNCardContentView.h"
 
-@interface RZViewController ()
-
+@interface RZViewController () <QNCardSliderDelegate>
+@property(nonatomic, strong) QNCardSlider *cardSlider;
 @end
 
 @implementation RZViewController
@@ -17,6 +19,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self.view addSubview:self.cardSlider];
+    [self.cardSlider sliderWillDisplay];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -24,6 +28,39 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+///可见的卡片数量
+- (NSInteger)sliderCardCount {
+    return 3;
+}
+///每个卡片对应的视图
+- (QNCardContentView *)sliderCardViewForIndex:(NSInteger)cardIndex {
+    QNCardContentView *contentView = [[QNCardContentView alloc] init];
+    if (cardIndex == 0) {
+        contentView.backgroundColor = [UIColor redColor];
+    } else if (cardIndex == 1) {
+        contentView.backgroundColor = [UIColor orangeColor];
+    } else if (cardIndex == 2){
+        contentView.backgroundColor = [UIColor systemPinkColor];
+    } else if (cardIndex == 3) {
+        contentView.backgroundColor = [UIColor greenColor];
+    }
+    return contentView;
+}
+///每个卡片的大小
+- (CGSize)sliderCardSize {
+    return CGSizeMake((CGRectGetWidth([UIScreen mainScreen].bounds) - 30) / 1.81f, 112);
+}
+
+#pragma mark lazy load
+- (QNCardSlider *)cardSlider {
+    if (!_cardSlider) {
+        _cardSlider = [[QNCardSlider alloc] initWithFrame:CGRectMake(0, 100, CGRectGetWidth([UIScreen mainScreen].bounds), 112)];
+        _cardSlider.sliderDelegate = self;
+//        _cardSlider.needAutoScroll = YES;
+    }
+    return _cardSlider;
 }
 
 @end
