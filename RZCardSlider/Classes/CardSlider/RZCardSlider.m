@@ -6,26 +6,26 @@
 //  Copyright © 2020 Tencent. All rights reserved.
 //
 
-#import "QNCardSlider.h"
-#import "QNCardContentView.h"
+#import "RZCardSlider.h"
+#import "RZCardContentView.h"
 #import "UIView+RZUtils.h"
 #import "RZWeakTimerTarget.h"
 #import <objc/runtime.h>
 
 static NSInteger const QNCardContentViewTagPlus = 1000;
 
-@interface QNCardSlider () <UIScrollViewDelegate>
+@interface RZCardSlider () <UIScrollViewDelegate>
 @property(nonatomic, strong) UIScrollView *sliderScrollView;
 @property(nonatomic, assign) NSInteger currentIndex;
 @property(nonatomic, assign) CGPoint lastContentOffset;
 @property(nonatomic, copy) NSArray *scaleConfig;
 @property(nonatomic, copy) NSArray<NSValue *> *cardFrameArray;
 @property(nonatomic, strong) NSTimer *timer;
-@property(nonatomic, copy) NSArray<QNCardContentView *> *cardContainer;
+@property(nonatomic, copy) NSArray<RZCardContentView *> *cardContainer;
 
 @end
 
-@implementation QNCardSlider
+@implementation RZCardSlider
 
 - (instancetype)initWithFrame:(CGRect)frame
 {
@@ -36,9 +36,9 @@ static NSInteger const QNCardContentViewTagPlus = 1000;
     return self;
 }
 
-- (NSArray<QNCardContentView *> *)allCards {
+- (NSArray<RZCardContentView *> *)allCards {
     NSInteger cardCount = [self p_realCardCount];
-    NSMutableArray<QNCardContentView *> *cards = [NSMutableArray array];
+    NSMutableArray<RZCardContentView *> *cards = [NSMutableArray array];
     for (NSInteger i = 0; i < cardCount; i++) {
         [cards addObject:[self p_viewForIndex:i]];
     }
@@ -78,7 +78,7 @@ static NSInteger const QNCardContentViewTagPlus = 1000;
 
         if (cardCount > 1 && self.containsBufferCard) {
             //缓冲卡片,循环播放的时候不需要
-            QNCardContentView *bufferCardView = [self.sliderDelegate sliderCardViewForIndex:cardCount + 1];
+            RZCardContentView *bufferCardView = [self.sliderDelegate sliderCardViewForIndex:cardCount + 1];
             [bufferCardView roundCornersOnTopLeft:YES topRight:YES bottomLeft:YES bottomRight:YES radius:6.f];
             bufferCardView.tag = cardCount + 1 + QNCardContentViewTagPlus;
             bufferCardView.frame = CGRectMake(0, 0, originalSize.width, originalSize.height);
@@ -98,7 +98,7 @@ static NSInteger const QNCardContentViewTagPlus = 1000;
         }
     
         for (NSInteger index = cardCount; index >= 0; index --) {
-            QNCardContentView *cardView = [self.sliderDelegate sliderCardViewForIndex:index];
+            RZCardContentView *cardView = [self.sliderDelegate sliderCardViewForIndex:index];
             CGFloat scaleRatio = [[_scaleConfig objectAtIndex:index] floatValue];
             cardView.scaleRatio = scaleRatio;
             cardView.tag = index + QNCardContentViewTagPlus;
@@ -117,6 +117,7 @@ static NSInteger const QNCardContentViewTagPlus = 1000;
             [cardContainer addObject:cardView];
         }
         self.cardContainer = cardContainer.copy;
+        [self bringSubviewToFront:self.sliderScrollView];
     };
 }
 
@@ -176,10 +177,10 @@ static NSInteger const QNCardContentViewTagPlus = 1000;
     }
 }
 
-- (QNCardContentView *)p_viewForIndex:(NSInteger)index {
+- (RZCardContentView *)p_viewForIndex:(NSInteger)index {
     if ([self p_realCardCount] > 0) {
         NSInteger realIndex = index % [self p_realCardCount];
-        QNCardContentView *currentView = [self viewWithTag:realIndex + QNCardContentViewTagPlus];
+        RZCardContentView *currentView = [self viewWithTag:realIndex + QNCardContentViewTagPlus];
         return currentView;
     }
     return nil;
@@ -200,7 +201,7 @@ static NSInteger const QNCardContentViewTagPlus = 1000;
     return cardCount + (self.containsBufferCard ? 2 : 1);
 }
 
-- (void)p_sliderSelectCardAtIndex:(NSInteger)index cardView:(QNCardContentView *)cardView {
+- (void)p_sliderSelectCardAtIndex:(NSInteger)index cardView:(RZCardContentView *)cardView {
     if ([self.sliderDelegate respondsToSelector:@selector(sliderDidSelectCardAtIndex:firstPositionIndex:cardView:)]) {
         [self.sliderDelegate sliderDidSelectCardAtIndex:index firstPositionIndex:self.currentIndex cardView:cardView];
     }
@@ -253,7 +254,7 @@ static NSInteger const QNCardContentViewTagPlus = 1000;
             
             for (NSInteger index = 0; index < totalCount; index ++) {
                 NSInteger realIndex = self.currentIndex + index;
-                QNCardContentView *currentCardView = [self p_viewForIndex:realIndex];
+                RZCardContentView *currentCardView = [self p_viewForIndex:realIndex];
                 CGRect endFrame = [self.cardFrameArray objectAtIndex:((index + totalCount) - 1) % totalCount].CGRectValue;
                 CGFloat scaleRatio = [[self.scaleConfig objectAtIndex:((index + totalCount) - 1) % totalCount] floatValue];
                 
@@ -282,7 +283,7 @@ static NSInteger const QNCardContentViewTagPlus = 1000;
             [self bringSubviewToFront:self.sliderScrollView];
             if (!self.containsBufferCard) {
                 //如果没有缓存卡片，左滑动画之后，需要将最左边的卡片移动到最右边
-                QNCardContentView *currentCardView = [self p_viewForIndex:self.currentIndex];
+                RZCardContentView *currentCardView = [self p_viewForIndex:self.currentIndex];
                 [self p_updateTransformWithIndex:((0 + totalCount) - 1) % totalCount toView:currentCardView];
                 [currentCardView refreshUI];
                 [currentCardView didSlideToIndex:((0 + totalCount) - 1) % totalCount];
@@ -293,7 +294,7 @@ static NSInteger const QNCardContentViewTagPlus = 1000;
         
         if (!self.containsBufferCard) {
             //如果没有缓存卡片，右滑动画之前需要右边最后一张卡片移动到左边
-            QNCardContentView *lastCardView = [self p_viewForIndex:self.currentIndex + totalCount - 1];
+            RZCardContentView *lastCardView = [self p_viewForIndex:self.currentIndex + totalCount - 1];
             [self p_updateTransformWithIndex:totalCount % (totalCount + 1) toView:lastCardView];
             [lastCardView refreshUI];
             [lastCardView didSlideToIndex:totalCount % (totalCount + 1)];
@@ -305,7 +306,7 @@ static NSInteger const QNCardContentViewTagPlus = 1000;
                          animations:^{
             for (NSInteger index = totalCount - 1; index >= 0; index --) {
                 NSInteger realIndex = self.currentIndex + index;
-                QNCardContentView *currentCardView = [self p_viewForIndex:realIndex];
+                RZCardContentView *currentCardView = [self p_viewForIndex:realIndex];
                 [self p_updateTransformWithIndex:(index + 1) % totalCount toView:currentCardView];
                 [currentCardView refreshUI];
                 [currentCardView didSlideToIndex:(index + 1) % totalCount];
@@ -331,7 +332,7 @@ static NSInteger const QNCardContentViewTagPlus = 1000;
 }
 
 - (void)p_cardSliderDidClick:(UITapGestureRecognizer *)sender {
-    [self p_sliderSelectCardAtIndex:sender.view.tag - QNCardContentViewTagPlus cardView:(QNCardContentView *)sender.view];
+    [self p_sliderSelectCardAtIndex:sender.view.tag - QNCardContentViewTagPlus cardView:(RZCardContentView *)sender.view];
 }
 
 - (void)autoScroll {

@@ -7,11 +7,11 @@
 //
 
 #import "RZViewController.h"
-#import "QNCardSlider.h"
-#import "QNCardContentView.h"
+#import "RZCardSlider.h"
+#import "RZCardContentView.h"
 
 @interface RZViewController () <QNCardSliderDelegate>
-@property(nonatomic, strong) QNCardSlider *cardSlider;
+@property(nonatomic, strong) RZCardSlider *cardSlider;
 @end
 
 @implementation RZViewController
@@ -35,8 +35,8 @@
     return 3;
 }
 ///每个卡片对应的视图
-- (QNCardContentView *)sliderCardViewForIndex:(NSInteger)cardIndex {
-    QNCardContentView *contentView = [[QNCardContentView alloc] init];
+- (RZCardContentView *)sliderCardViewForIndex:(NSInteger)cardIndex {
+    RZCardContentView *contentView = [[RZCardContentView alloc] init];
     if (cardIndex == 0) {
         contentView.backgroundColor = [UIColor redColor];
     } else if (cardIndex == 1) {
@@ -54,9 +54,9 @@
 }
 
 #pragma mark lazy load
-- (QNCardSlider *)cardSlider {
+- (RZCardSlider *)cardSlider {
     if (!_cardSlider) {
-        _cardSlider = [[QNCardSlider alloc] initWithFrame:CGRectMake(0, 100, CGRectGetWidth([UIScreen mainScreen].bounds), 112)];
+        _cardSlider = [[RZCardSlider alloc] initWithFrame:CGRectMake(0, 100, CGRectGetWidth([UIScreen mainScreen].bounds), 112)];
         _cardSlider.sliderDelegate = self;
 //        _cardSlider.needAutoScroll = YES;
     }

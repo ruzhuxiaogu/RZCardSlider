@@ -11,7 +11,7 @@
 		1E7DEFE88CECDEC9EAA8ED0DFEE1277B /* Pods-RZCardSlider_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E280E6632BD204D10295F238C55CBA9 /* Pods-RZCardSlider_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2A480BAF2B565B2AA5773D05594E2C77 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7F357906E663FB2A84F39FC436FB0A1 /* CoreText.framework */; };
 		3FC02146DF122ECAE0687CD2C6526017 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DCBF55828D88FED2FDACA5ABB41D0D2 /* Foundation.framework */; };
-		45F22944FAA203540F4B7727E09D7E5C /* QNCardSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = C99C416E4BA29A4A651AC12320C4B61C /* QNCardSlider.m */; };
+		45F22944FAA203540F4B7727E09D7E5C /* RZCardSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = C99C416E4BA29A4A651AC12320C4B61C /* RZCardSlider.m */; };
 		559F5262AEDDDBA40CE3A3B151C8D27C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7262B265CC191D5570E40FC96D3B2EB0 /* CoreGraphics.framework */; };
 		64626F53C818EA28626DBC83F926CC48 /* RZCardSlider-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B7DFA4D465FD2AA984976A21EFB2CD0 /* RZCardSlider-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6C0D68A01F6AF2F29A7993BEACFDF41E /* RZCardSlider-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3445FA1D119E00662052534351B851C6 /* RZCardSlider-dummy.m */; };
@@ -19,12 +19,12 @@
 		704FE0012562ACAD000ACE83 /* RZWeakTimerTarget.m in Sources */ = {isa = PBXBuildFile; fileRef = 704FDFFF2562ACAD000ACE83 /* RZWeakTimerTarget.m */; };
 		704FE00A2562ACF6000ACE83 /* UIView+RZUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 704FE0082562ACF6000ACE83 /* UIView+RZUtils.h */; };
 		704FE00B2562ACF6000ACE83 /* UIView+RZUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 704FE0092562ACF6000ACE83 /* UIView+RZUtils.m */; };
-		7CB60DFB0ED9C6FF427AE5AF32E8D39F /* QNCardContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 828C59D7D0172BF5AD2B25B1DC5EB75E /* QNCardContentView.m */; };
-		8E0235EB587C1302C4A5194CA4FAB5FF /* QNCardSlider.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B8CB946EB800B9994E53F2C5215A490 /* QNCardSlider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7CB60DFB0ED9C6FF427AE5AF32E8D39F /* RZCardContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 828C59D7D0172BF5AD2B25B1DC5EB75E /* RZCardContentView.m */; };
+		8E0235EB587C1302C4A5194CA4FAB5FF /* RZCardSlider.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B8CB946EB800B9994E53F2C5215A490 /* RZCardSlider.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		92F7FF892B934EA0A684D521ADC9B9CB /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E80FB7F616A2D5007910D23DDD9D61B0 /* CoreTelephony.framework */; };
 		B597AA62CFC57D0BE1BDB92C53FD6651 /* Pods-RZCardSlider_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 47C915C497FF09387E62BB90D62B0F8C /* Pods-RZCardSlider_Example-dummy.m */; };
 		CE42378789C02C0721BB65DD1549D1F0 /* Pods-RZCardSlider_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FCC069C6A9D521CE08A62AE60C1E0666 /* Pods-RZCardSlider_Tests-dummy.m */; };
-		D98F9486D9D0DB8DCDE6D3057F8871F6 /* QNCardContentView.h in Headers */ = {isa = PBXBuildFile; fileRef = 86BC627FA91B2BD0C66E631166ACA1D8 /* QNCardContentView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D98F9486D9D0DB8DCDE6D3057F8871F6 /* RZCardContentView.h in Headers */ = {isa = PBXBuildFile; fileRef = 86BC627FA91B2BD0C66E631166ACA1D8 /* RZCardContentView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E1069B02C9ABC9DFE46B32BC399A4D6A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06E889D6B4FE7F6950ADBE80C9BE4AF6 /* SystemConfiguration.framework */; };
 		EBA9E96A47A74A8A825E6E35925B0B92 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DCBF55828D88FED2FDACA5ABB41D0D2 /* Foundation.framework */; };
 		F458BA8B71D16A1CFDB751A4BDDD76F8 /* Pods-RZCardSlider_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F4B408F2F53C6984A326DA9BA709DFE0 /* Pods-RZCardSlider_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -64,7 +64,7 @@
 		47C915C497FF09387E62BB90D62B0F8C /* Pods-RZCardSlider_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RZCardSlider_Example-dummy.m"; sourceTree = "<group>"; };
 		51883AC8DCCB775C080081E230203528 /* Pods_RZCardSlider_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RZCardSlider_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		53E05A17E081B54D20FD1AF055CB3D82 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		5B8CB946EB800B9994E53F2C5215A490 /* QNCardSlider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QNCardSlider.h; path = RZCardSlider/Classes/CardSlider/QNCardSlider.h; sourceTree = "<group>"; };
+		5B8CB946EB800B9994E53F2C5215A490 /* RZCardSlider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RZCardSlider.h; path = RZCardSlider/Classes/CardSlider/RZCardSlider.h; sourceTree = "<group>"; };
 		5E280E6632BD204D10295F238C55CBA9 /* Pods-RZCardSlider_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RZCardSlider_Tests-umbrella.h"; sourceTree = "<group>"; };
 		642E420B3A46BA700D7840EA65178B64 /* RZCardSlider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RZCardSlider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		704FDFFE2562ACAD000ACE83 /* RZWeakTimerTarget.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RZWeakTimerTarget.h; path = RZCardSlider/Classes/CardSlider/RZWeakTimerTarget.h; sourceTree = "<group>"; };
@@ -75,14 +75,14 @@
 		799FA1DD246A1C47762D03F42A19716A /* Pods-RZCardSlider_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RZCardSlider_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		7B7DFA4D465FD2AA984976A21EFB2CD0 /* RZCardSlider-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RZCardSlider-umbrella.h"; sourceTree = "<group>"; };
 		81469B27A4B094CE1768DAF9F91A74B9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		828C59D7D0172BF5AD2B25B1DC5EB75E /* QNCardContentView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QNCardContentView.m; path = RZCardSlider/Classes/CardSlider/QNCardContentView.m; sourceTree = "<group>"; };
-		86BC627FA91B2BD0C66E631166ACA1D8 /* QNCardContentView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QNCardContentView.h; path = RZCardSlider/Classes/CardSlider/QNCardContentView.h; sourceTree = "<group>"; };
+		828C59D7D0172BF5AD2B25B1DC5EB75E /* RZCardContentView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RZCardContentView.m; path = RZCardSlider/Classes/CardSlider/RZCardContentView.m; sourceTree = "<group>"; };
+		86BC627FA91B2BD0C66E631166ACA1D8 /* RZCardContentView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RZCardContentView.h; path = RZCardSlider/Classes/CardSlider/RZCardContentView.h; sourceTree = "<group>"; };
 		97EC8EC33DC288A155AE6F5F204FAB4D /* RZCardSlider.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RZCardSlider.xcconfig; sourceTree = "<group>"; };
 		98155E8B8E0FDEC34572B17541EA7D47 /* RZCardSlider-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "RZCardSlider-Info.plist"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		C6115C446DEAA1DD3BB04FC86BDBB54D /* RZCardSlider-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RZCardSlider-prefix.pch"; sourceTree = "<group>"; };
 		C91B08D0DD129ECC22A531F6C00AD0DB /* RZCardSlider.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = RZCardSlider.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		C99C416E4BA29A4A651AC12320C4B61C /* QNCardSlider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QNCardSlider.m; path = RZCardSlider/Classes/CardSlider/QNCardSlider.m; sourceTree = "<group>"; };
+		C99C416E4BA29A4A651AC12320C4B61C /* RZCardSlider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RZCardSlider.m; path = RZCardSlider/Classes/CardSlider/RZCardSlider.m; sourceTree = "<group>"; };
 		D5CA48D2795D366371B7F9C0C8A0B14E /* Pods-RZCardSlider_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RZCardSlider_Tests.modulemap"; sourceTree = "<group>"; };
 		D7F357906E663FB2A84F39FC436FB0A1 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreText.framework; sourceTree = DEVELOPER_DIR; };
 		DFC7CAE1C76B609298AF5E712256C594 /* Pods-RZCardSlider_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RZCardSlider_Example.modulemap"; sourceTree = "<group>"; };
@@ -163,10 +163,10 @@
 				704FE0092562ACF6000ACE83 /* UIView+RZUtils.m */,
 				704FDFFE2562ACAD000ACE83 /* RZWeakTimerTarget.h */,
 				704FDFFF2562ACAD000ACE83 /* RZWeakTimerTarget.m */,
-				86BC627FA91B2BD0C66E631166ACA1D8 /* QNCardContentView.h */,
-				828C59D7D0172BF5AD2B25B1DC5EB75E /* QNCardContentView.m */,
-				5B8CB946EB800B9994E53F2C5215A490 /* QNCardSlider.h */,
-				C99C416E4BA29A4A651AC12320C4B61C /* QNCardSlider.m */,
+				86BC627FA91B2BD0C66E631166ACA1D8 /* RZCardContentView.h */,
+				828C59D7D0172BF5AD2B25B1DC5EB75E /* RZCardContentView.m */,
+				5B8CB946EB800B9994E53F2C5215A490 /* RZCardSlider.h */,
+				C99C416E4BA29A4A651AC12320C4B61C /* RZCardSlider.m */,
 				631E136B74075F8D7EA77C019345D938 /* Pod */,
 				109987E2ED51DE2C4F5926494E1FCF0C /* Support Files */,
 			);
@@ -274,9 +274,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				704FE00A2562ACF6000ACE83 /* UIView+RZUtils.h in Headers */,
-				D98F9486D9D0DB8DCDE6D3057F8871F6 /* QNCardContentView.h in Headers */,
+				D98F9486D9D0DB8DCDE6D3057F8871F6 /* RZCardContentView.h in Headers */,
 				704FE0002562ACAD000ACE83 /* RZWeakTimerTarget.h in Headers */,
-				8E0235EB587C1302C4A5194CA4FAB5FF /* QNCardSlider.h in Headers */,
+				8E0235EB587C1302C4A5194CA4FAB5FF /* RZCardSlider.h in Headers */,
 				64626F53C818EA28626DBC83F926CC48 /* RZCardSlider-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -407,8 +407,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				704FE00B2562ACF6000ACE83 /* UIView+RZUtils.m in Sources */,
-				7CB60DFB0ED9C6FF427AE5AF32E8D39F /* QNCardContentView.m in Sources */,
-				45F22944FAA203540F4B7727E09D7E5C /* QNCardSlider.m in Sources */,
+				7CB60DFB0ED9C6FF427AE5AF32E8D39F /* RZCardContentView.m in Sources */,
+				45F22944FAA203540F4B7727E09D7E5C /* RZCardSlider.m in Sources */,
 				704FE0012562ACAD000ACE83 /* RZWeakTimerTarget.m in Sources */,
 				6C0D68A01F6AF2F29A7993BEACFDF41E /* RZCardSlider-dummy.m in Sources */,
 			);

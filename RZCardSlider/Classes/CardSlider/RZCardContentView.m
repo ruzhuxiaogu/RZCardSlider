@@ -5,13 +5,13 @@
 //  Created by 李庭栋 on 2020/11/8.
 //
 
-#import "QNCardContentView.h"
+#import "RZCardContentView.h"
 
-@interface QNCardContentView ()
+@interface RZCardContentView ()
 
 @end
 
-@implementation QNCardContentView
+@implementation RZCardContentView
 
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];

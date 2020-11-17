@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface QNCardContentView : UIView
+@interface RZCardContentView : UIView
 
 @property(nonatomic, assign) CGFloat scaleRatio;
 
