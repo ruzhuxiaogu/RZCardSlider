@@ -1,6 +1,6 @@
 //
 //  QNCardSlider.m
-//  QQNews
+//  RZCardSlider
 //
 //  Created by 李庭栋 on 2020/11/8.
 //  Copyright © 2020 Tencent. All rights reserved.
